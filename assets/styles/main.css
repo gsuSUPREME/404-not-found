@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+.navbar {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar__brand {
+    margin-left: 0.5rem;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: "Space Mono", monospace;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem;
+    font-family: "Space Mono", monospace;
+    margin-bottom: 0.5rem;
+}
+
+.body__image {
+    flex-basis: 50%;
+}
+
+.body__image img{
+    max-width: 100%;
+}
+
+.body__text {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.body__text__title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.body__text__button button{
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    background-color: #333333;
+    transition: all 0.3s ease-in-out;
+}
+
+.body__text__button button:hover{
+    cursor: pointer;
+    background-color: #000;
+    border: #2e2623 5px solid;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    color: #ccc;
+}
+
+.footer a {
+    color: hsl(0, 0%, 50%);
+}
+
+.footer:visited {
+    color: hsl(0, 0%, 50%);
+}
+
+@media (max-width: 1000px) {
+    .body {
+        flex-direction: column;
+    }
+    .navbar {
+        justify-content: center;
+    }
+    .body__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .body__image img{
+        max-width: 80%;
+    }
+}
+
